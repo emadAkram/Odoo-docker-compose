@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+
+  odoo14:
+    environment:
+      - LOG_LEVEL=debug
+    depends_on: ["db1"]
+    # command: odoo -u sale_products
